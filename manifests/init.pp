@@ -4,6 +4,7 @@ class domongodb (
   # ---------------
   # setup defaults
 
+  $user = 'web',
   $port = 27018,
 
   # end of class arguments
