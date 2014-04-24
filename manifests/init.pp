@@ -25,4 +25,7 @@ class domongodb (
     verbose => true,
   }
 
+  # if we've got a message of the day, include
+  @domotd::register { "MongoDB(${port})" : }
+
 }
