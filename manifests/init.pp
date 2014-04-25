@@ -5,7 +5,7 @@ class domongodb (
   # setup defaults
 
   $user = 'web',
-  $port = 27018,
+  $port = 27017,
 
   # end of class arguments
   # ----------------------
@@ -23,6 +23,8 @@ class domongodb (
   class {'::mongodb::server':
     port    => $port,
     verbose => true,
+  }
+  class {'::mongodb::client':
   }
 
   # if we've got a message of the day, include
